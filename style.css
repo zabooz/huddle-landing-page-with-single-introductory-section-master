@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing:border-box;
+    font-family: 'Open Sans','Poppins',sans-serif;
+}
+body{
+    background-image: url(./images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: -30px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+}
+header{
+    width: 375px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.logo{
+    width: 150px;
+    margin-bottom: 3rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:375px;
+}
+.mockup{
+    width: 300px;
+}
+h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+
+}
+p{
+    text-align: center;
+    padding: 1rem 2.2rem;
+    opacity: .8;
+
+}
+button{
+    margin-top: 1rem;
+    color:hsl(257, 40%, 49%);
+    padding:1rem;
+    width: 200px;
+    border-radius: 2rem;
+    border:none;
+    box-shadow: 0px 0px 3px 3px rgb(158, 49, 154);
+}
+button:hover{
+    color:white;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+i:hover{
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+footer{
+    margin-top: 5rem;
+    position: absolute;
+    bottom:0;
+}
+@media(min-width:601px){
+
+    body{
+        flex-direction: row;
+    }
+    header{
+        margin-left: 5rem;
+        width: 600px;
+    }
+    main{
+        width: 600px;
+        align-items: flex-start;
+        padding:2rem;
+    }
+    h2,
+    p{
+        text-align: start;
+        padding-left: 0;
+    }
+    p{
+        width: 500px;
+    }
+    h2{
+        width:450px;
+        font-size: 2rem;
+    }
+    .mockup{
+        width:500px
+    }
+    .links{
+        position: absolute;
+        bottom: 4rem;
+        right: 8rem;
+    }
+    button{
+        font-size: 1.2rem;
+}
